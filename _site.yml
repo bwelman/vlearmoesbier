@@ -2,10 +2,10 @@ name: "vlearmoesbier"
 title: "Vlearmoesbier"
 description: |
   Website brouwerij Vlearmoesbier
-base_url: https://vlearmoesbier.nl/
+base_url: https://bwelman.github.io/vlearmoesbier/
 output_dir: "docs"
 theme: bwstyle.css
-# google_analytics: "G-78K928PMC4"
+google_analytics: "G-78K928PMC4"
 navbar:
   logo:
     image: images/logo.jpg
