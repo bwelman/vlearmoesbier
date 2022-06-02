@@ -1,0 +1,23 @@
+name: "vlearmoesbier"
+title: "Vlearmoesbier"
+description: |
+  Website brouwerij Vlearmoesbier
+base_url: https://vlearmoesbier.nl/
+output_dir: "docs"
+theme: bwstyle.css
+# google_analytics: "G-78K928PMC4"
+navbar:
+  logo:
+    image: images/logo.jpg
+    href: index.html
+  search: true
+  right:
+    - icon: fa-home
+      href: index.html
+    - text: "Over"
+      href: over.html
+    - icon: fa fa-github
+      href: https://github.com/bwelman
+    - icon: fa fa-linkedin
+      href: https://www.linkedin.com/in/benwelman/
+output: distill::distill_article

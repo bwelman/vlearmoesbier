@@ -1,0 +1,19 @@
+---
+title: "Sierra Nevada Resilience"
+description: |
+  Recept van Sierra Nevada voor ondersteuning slachtoffers bosbranden.
+author:
+  - name: Ben Welman
+date: 11-29-2018
+preview: sierra_nevada_resilience.png
+categories:
+  - recept
+output:
+  distill::distill_article
+---
+
+```{r echo=FALSE}
+knitr::include_graphics("sierra_nevada_resilience.png")
+```
+
+De bekende *Sierra Nevada brouwerij* in Noord Californie is gespaard gebleven bij de grote bosbranden. Maar veel werknemers en buren zijn wel getroffen. Om deze te helpen is is het *Sierra Nevada Camp Fire Relief Fund* opgericht en wordt een speciaal bier gebrouwen waarvan alle opbrengst naar het fonds gaat. Ook het recept van dit bier, [Sierra Nevada Resilience IPA](https://www.homebrewersassociation.org/homebrew-recipe/sierra-nevada-resilience-ipa/?utm_source=informz&utm_medium=email&utm_campaign=AHA&_zs=R6fuM1&_zl=vD6m4), is gepubliceerd zodat anderen zich aan kunnen sluiten bij dit initiatief.

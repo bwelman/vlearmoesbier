@@ -1,0 +1,76 @@
+---
+title: "BKG Biertypenlijst"
+description: |
+  De BKG biertypenlijst in een Excel bestand.
+author:
+  - name: Ben Welman
+date: 11-26-2018
+categories:
+  - excel
+  - biertype
+output:
+  distill::distill_article
+---
+
+*Update september 2021*
+
+De laatste versie van de BKG biertypenlijst is versie 2.4 van juli 2021. Hierin is als biertype toegevoegd: New England IPA (NEIPA). Deze wijziging is ook doorgevoerd in het hieronder vermelde csv bestand.
+
+*Update 2 november 2019*
+
+Bij de keuringen van bieren hanteert het **Bier Keurmeesters Gilde (BKG)** een lijst met biertypen. Via hun website kun je de [BKG Biertypenlijst](https://www.bierkeurmeestersgilde.nl/biertypenlijst) als pdf bestand downloaden. De huidige versie 2.3 is van augustus 2019.
+
+Er bestaat ook nog een Amerikaanse lijst met biertypen, de zogenaamde BJCP style. De laatste versie is van 2015 en kun je downloaden via [BJCP 2015 Style Guidelines](https://www.bjcp.org/docs/2015_Guidelines_Beer.pdf). Deze heeft veel meer stijlen gedefinieerd dan het BKG. In de nieuwe versie van de BKG lijst is, indien mogelijk, ook het best bijpassende nummer uit de BJCP lijst opgenomen.
+
+Om de technische kenmerken van de biertypen in een Excel programma te kunnen gebruiken heb ik deze kenmerken in een gestructureerd csv bestand geplaatst. De gebruikte variabelen zijn:
+
+|variabele   |gegevenstype  |toelichting    |
+|:-----------|:--------------|:-------------|
+|BIERTYPE    |tekst          |Naam biertype |
+|KLASSE      |tekst          |A, B, C of D  |
+|BEGINSGMIN  |geheel getal   |Begin SG, minimum (gram/liter) |
+|BEGINSGMAX  |geheel getal   |Begin SG, maximum (gram/liter)  |
+|SVGMIN      |geheel getal   |Schijnbare vergistingsgraad, minimum (percentage)  |
+|SVGMAX      |geheel getal   |Schijnbare vergistingsgraad, maximum (percentage)  |
+|ABVMIN      |decimaal getal |Alcohol volumepercentage, minimum  |
+|ABVMAX      |decimaal getal |Alcohol volumepercentage, maximum  |
+|EBCMIN      |geheel getal   |Kleur, minimum (EBC) |
+|EBCMAX      |geheel getal   |Kleur, maximum (EBC) |
+|EBUMIN      |geheel getal   |Bitterheid, minimum (EBU)|
+|EBUMAX      |geheel getal   |Bitterheid, maximum (EBU)|
+|CO2MIN      |decimaal getal |Koolzuurgehalte, minimum (gram/liter)|
+|CO2MAX      |decimaal getal |Koolzuurgehalte, maximum (gram/liter)|
+|BJCP        |tekst          |BJCP style (2015) nummer|
+
+In de lijst komen ook een paar ontbrekende waarden voor omdat de gegevens niet bekend zijn. Daarnaast zijn voor een paar typen bij sommige kenmerken alleen een gemiddelde waarde opgegeven. In dat geval is in de Excel lijst de minimum- en maximumwaarde voor dat kenmerk gelijk gemaakt aan de opgegeven gemiddelde waarde.
+
+Het gegevensbestand [bkg_biertypen.csv](bkg_biertypen.csv) kun je downloaden en in Excel inlezen. Maar fraaier en beter is het om deze via Power Query als een tabel in een Excel werkblad te laden. Het voordeel hiervan is dat wanneer het gegevensbestand gewijzigd of uitgebreid wordt, je de tabel in Excel met 1 druk op een knop kunt vernieuwen.
+
+<aside>
+En om jouw Excel vaardigheden te vergroten kun je mijn gratis online cursus [Leer Excel](https://leerexcel.netlify.app/) volgen.
+</aside>
+
+Voor Excel 2016 (365) werkt dit als volgt.[^1]
+
+1.  Open een (nieuw) Excel bestand.
+1.  Kies **tab Gegevens > Van het web (groep Gegevens ophalen en transformeren)**
+1.  Vul de URL van het bestand in.
+1.  Klik op **OK**.
+1.  Klik op **Laden**.
+
+De gegevens worden nu als een tabel in een nieuw Excel werkblad geplaatst. Hierna kun je de gegevens gebruiken voor analyses of voor een eigen brouwprogramma in Excel.
+
+Om de gegevens te vernieuwen kies je: **tab Gegevens > Alles vernieuwen (groep Query's en verbindingen)**.
+
+### Demo
+
+Wanneer je de gegevens eenmaal in een werkblad hebt staan kun je hiermee experimenteren en analyses maken. Als voorbeeld het bestand [demo_bkg_biertypen.xlsx](demo_bkg_biertypen.xlsx) waarin de volgende acties zijn uitgevoerd:
+
+1.  Laden van de biertypenlijst naar een tabel in een werkblad.
+1.  Maken van twee nieuwe variabelen met de Query Editor.
+1.  Maken van twee grafieken die de variatie in alcoholgehalte en bitterheid voor de biertypen tonen.
+1.  Maken van twee draaitabellen die de grenzen van het begin SG en EBC waarde voor de vier klassen tonen.
+1.  Maken van een draaitabel met draaigrafiek en slicer om het verband tussen het begin SG en alcoholgehalte voor de biertypes te onderzoeken.
+
+
+[1]: Voor Excel 2013 en 2010 moet je eerst de gratis [Power Query addin](https://www.microsoft.com/nl-NL/download/details.aspx?id=39379) downloaden en installeren.

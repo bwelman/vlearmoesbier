@@ -1,0 +1,23 @@
+---
+title: "Alfazuurwaarden hopoogst 2010-2019"
+description: |
+  Alfazuurwaarden van hopoogst 2010-2019.
+author:
+  - name: Ben Welman
+date: 01-12-2020
+preview: alfazuur_hop_20102019.png
+categories:
+  - hop
+output:
+  distill::distill_article
+---
+
+In november heeft Brauwelt op haar website een [artikel](https://www.brauwelt.com/de/themen/rohstoffe/640738-alpha-s%C3%A4urenwerte-von-hopfen-der-ernte-2019-und-aktualisierte-mehrj%C3%A4hrige-durchschnittswerte) over de alfazuurwaarden van de hopoogst in 2019 geplaatst, aangevuld met de waarden voor de voorgaande 10 jaren (voor zover bekend). Het betreft hier hopsoorten uit de Duitse teeltregio's Hallertau, Spalt en Tettnang, aangevuld met Tsjechië, Slovenië en Polen. Waarom de regio Hersbruck niet is opgenomen is mij onbekend. Ik heb de gepubliceerde gegevens in een `.csv` bestand verzameld en de labels en namen van landen indien nodig vertaald.
+
+Via [alfazuur_hop_20102019.csv](alfazuur_hop_20102019.csv) kun je het gegevensbestand downloaden en in Excel inlezen. Maar beter is het om dat via Power Query te doen. Voor het resultaat zie figuur \@ref(fig:alfazuren). In de kolom `Type` staat **A* voor aromahoppen en **B** voor bitterhoppen.
+
+```{r alfazuren, echo=FALSE, fig.cap="Luchtdroge alfazuurwaarden volgens EBC 7.4 in vers geoogste hop van de oogsten 2010-2019.", out.width="100%"}
+knitr::include_graphics("alfazuur_hop_20102019.png")
+```
+
+Hierna kun je zelf gemiddelde waarden uitrekenen en proberen trends te ontdekken.

@@ -1,0 +1,64 @@
+---
+title: "BJCP Biertypenlijst"
+description: |
+  De Amerikaanse BJCP biertypenlijst in een Excel bestand.
+author:
+  - name: Ben Welman
+date: 11-18-2019
+categories:
+  - excel
+  - biertype
+output:
+  distill::distill_article
+---
+
+*Update januari 2022*
+
+De laatste versie van de BJCPbiertypenlijst is van december 2021. De wijzigingen zijn doorgevoerd in het hieronder vermelde csv bestand. De speciale bieren waarvoor geen technische kenmerken beschikbaar zijn (vanaf categorie 28) zijn hierin niet opgenomen.
+
+-----
+De Amerikaanse BJCP (Beer Judge Certification Program) gebruikt bij haar keuringen een uitgebreide lijst met biertypen, de zogenaamde BJCP Style Guidelines. De laatste versie kun je downloaden via [BJCP Style Guidelines](https://www.bjcp.org/download/2021_Guidelines_Beer.pdf).
+
+Evenals voor de lijst van het Bier Keurmeesters Gilde (BKG) heb ik ook voor deze BJCP lijst de technische kenmerken van de biertypen in een gestructureerd csv bestand geplaatst welke je weer in verschillende applicaties, waaronder Excel, kunt inladen. De gebruikte variabelen zijn:
+
+|variabele   |gegevenstype   |toelichting    |
+|:-----------|:--------------|:-------------|
+|CategoryNo  |geheel getal   |Categorie nummer |
+|CategoryName|tekst          |Categorie |
+|Style_id    |tekst          |BJCP stijl nummer |
+|BeerStyle   |tekst          |Bier stijl |
+|OGmin       |decimaal getal |Begin SG, minimum |
+|OGmax       |decimaal getal |Begin SG, maximum |
+|FGmin       |decimaal getal |Eind SG, minimum |
+|FGmax       |decimaal getal |Eind SG, maximum |
+|ABVmin      |decimaal getal |Alcohol volumepercentage, minimum  |
+|ABVmax      |decimaal getal |Alcohol volumepercentage, maximum  |
+|IBUmin      |geheel getal   |Bitterheid, minimum (IBU)|
+|IBUmax      |geheel getal   |Bitterheid, maximum (IBU)|
+|SRMmin      |geheel getal   |Kleur, minimum (SRM) |
+|SRMmax      |geheel getal   |Kleur, maximum (SRM) |
+
+Toelichting
+
++ Voor het aangeven van de bitterheid wordt in Amerika de **IBU** (International Bitter Unit) gebruikt en in Europa de **EBU** (European Bitter Unit). Ze zijn in feite hetzelfde, maar verschillen in de analysemethode waardoor er toch kleine verschillen kunnen zijn.
++ Voor het aangeven van de kleur van het bier wordt in Amerika de **SRM** (Standard Reference Method) gebruikt en in Europa de **EBC** (European Brewery Convention). De EBC waarde is ietsjes minder dan het dubbele van de SRM waarde. Voor de omrekening kun je de volgende formule gebruiken: EBC = 1,97 * SRM.
+
+Het gegevensbestand [bjcp_biertypen.csv](bjcp_biertypen.csv) kun je downloaden en in Excel inlezen. Maar fraaier en beter is het om deze via Power Query als een tabel in een Excel werkblad te laden. Het voordeel hiervan is dat wanneer het gegevensbestand gewijzigd of uitgebreid wordt, je de tabel in Excel met 1 druk op een knop kunt vernieuwen.
+
+<aside>
+En om jouw Excel vaardigheden te vergroten kun je mijn gratis online cursus [Leer Excel 2016](https://leerexcel.netlify.app/) volgen.
+</aside>
+
+Voor Excel 2016 (365) werkt dit als volgt.[^1]
+
+1.  Open een (nieuw) Excel bestand.
+1.  Kies **tab Gegevens > Van het web (groep Gegevens ophalen en transformeren)**
+1.  Vul de URL van het bestand in.
+1.  Klik op **OK**.
+1.  Klik op **Laden**.
+
+De gegevens worden nu als een tabel in een nieuw Excel werkblad geplaatst. Hierna kun je de gegevens gebruiken voor analyses of voor een eigen brouwprogramma in Excel.
+
+Om de gegevens te vernieuwen kies je: **tab Gegevens > Alles vernieuwen (groep Query's en verbindingen)**.
+
+[1]: Voor Excel 2013 en 2010 moet je eerst de gratis [Power Query addin](https://www.microsoft.com/nl-NL/download/details.aspx?id=39379) downloaden en installeren.
