@@ -1,0 +1,22 @@
+{
+  "articles": [
+    {
+      "path": "index.html",
+      "title": "Vlearmoesbier",
+      "description": "Welkom op de website van Vlearmoesbier.\n",
+      "author": [],
+      "contents": "\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-06-02T14:16:21+02:00"
+    },
+    {
+      "path": "over.html",
+      "title": "Over de brouwer en zijn website",
+      "description": "Overzicht van het ontstaan van mijn hobby en de brouwerij.",
+      "author": [],
+      "date": "2018-09-08",
+      "contents": "\r\n\r\n\r\n\r\nIn carnavalstijd staat Neede als Vlearmoesdorp op de kaart.\r\nEn Neede heeft ook al een Vlearmoesplein,\r\nVlearmoesbus, … Hoog tijd dus voor een\r\nVlearmoesbrouwerij met\r\nVlearmoesbieren. In het voorjaar van 2011 ben ik\r\nbegonnen met het brouwen van mijn eerste biertje, een lentebok. Dat\r\nsmaakte naar meer. Er werd de benodigde apparatuur aangeschaft om 20\r\nliter bier te kunnen brouwen en inmiddels zijn er verschillende soorten\r\nbieren gemaakt, zoals Needse Oude, Vlearmoes Weizen, Pale Ale, ….\r\nIn de Needse hobbybrouwerij Vlearmoes wordt door mij zo’n 10 keer per\r\njaar bier gebrouwen. Er wordt gebrouwen met liefde voor het bier en het\r\ngebruik van natuurlijke grondstoffen. Er is niets lekkerder dan een glas\r\nmet heerlijk zelf gebrouwen bier, op de goede temperatuur en\r\ngepresenteerd in een mooi glas.\r\nZo leerde ik hoe je bier\r\nmoet brouwen\r\nEind 2010 hoorde ik over een brouwcursus die in het najaar van 2011\r\naangeboden werd door het Twents\r\nBierbrouwersgilde. Door het volgen hiervan heb ik zeer veel\r\nopgestoken over het brouwproces, de apparatuur en vooral over het\r\nproeven en het onder woorden brengen van smaakervaringen. Ik ben lid van\r\nhet gilde gebleven en op de maandelijkse clubavonden worden ervaringen\r\nuitgewisseld en bieren geproefd. Door de cursus heb ik ook ervaren\r\nbrouwers leren kennen als de cursusleiders Leo Nijhuis en Hans Saris,\r\nalsmede mijn mentor Eddy Bruning. Ik heb veel van hen opgestoken.\r\nBrouwcursus\r\nVoor het Twents\r\nBierbrouwersgilde heb ik een brouwcursus gemaakt, zie online brouwcursus\r\nContact\r\nE-mail\r\n\r\n\r\n\r\n",
+      "last_modified": "2022-06-02T14:16:23+02:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}
