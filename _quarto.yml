@@ -12,9 +12,14 @@ website:
     creator: "@benwem"
     card-style: summary_large_image
   navbar:
-    right:
+    left:
+      - text: "Blog"
+        href: /
+      - text: "Archief"
+        href: archief/
       - text: "Over"
         href: over.qmd
+    right:
       - icon: github
         href: https://github.com/bwelman
       - icon: twitter
@@ -25,6 +30,8 @@ format:
   html:
     theme: beer.scss
     css: styles.css
+    link-external-icon: true
+    link-external-newwindow: true
     smooth-scroll: true
 
 editor: visual
