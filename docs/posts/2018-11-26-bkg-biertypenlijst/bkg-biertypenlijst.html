@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.3">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Ben Welman">
+<meta name="dcterms.date" content="2018-11-26">
+<meta name="description" content="De BKG biertypenlijst in een Excel bestand.">
+
+<title>Vlearmoesbier - BKG Biertypenlijst</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Geen resultaten",
+    "search-matching-documents-text": "overeenkomsten",
+    "search-copy-link-title": "Kopieer link naar Zoeken",
+    "search-hide-matches-text": "Verberg extra overeenkomsten",
+    "search-more-match-text": "verdere overeenkomsten in dit document",
+    "search-more-matches-text": "verdere overeenkomsten in dit document",
+    "search-clear-button-title": "Reset",
+    "search-detached-cancel-button-title": "Annuleren",
+    "search-submit-button-title": "Indienen"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-78K928PMC4"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-78K928PMC4', { 'anonymize_ip': true});
+</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta name="twitter:title" content="Vlearmoesbier - BKG Biertypenlijst">
+<meta name="twitter:description" content="De BKG biertypenlijst in een Excel bestand.">
+<meta name="twitter:image" content="https://bwelman.github.io/vlearmoesbier/posts\2018-11-26-bkg-biertypenlijst\bkg-biertypen.png">
+<meta name="twitter:creator" content="@benwem">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="746">
+<meta name="twitter:image-width" content="691">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Vlearmoesbier</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../over.html">Over</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/bwelman"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/benwem"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/benwelman/"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">BKG Biertypenlijst</h1>
+                  <div>
+        <div class="description">
+          De BKG biertypenlijst in een Excel bestand.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">excel</div>
+                <div class="quarto-category">biertype</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Auteur</div>
+      <div class="quarto-title-meta-contents">
+               <p>Ben Welman </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Publicatiedatum</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 26, 2018</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+<p><em>Laatste update mei 2022</em></p>
+<p>Bij de keuringen van bieren hanteert het <strong>Bier Keurmeesters Gilde (BKG)</strong> een lijst met biertypen. Via hun website kun je de <a href="https://www.bierkeurmeestersgilde.nl/biertypenlijst">BKG Biertypenlijst</a> als pdf bestand downloaden. De huidige versie 2.4 is van juli 2021.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Opmerking
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Er bestaat ook nog een Amerikaanse lijst met biertypen, de zogenaamde BJCP style. De laatste versie is van 2021 en kun je downloaden via <a href="https://www.bjcp.org/download/2021_Guidelines_Beer.pdf">BJCP 2021 Style Guidelines</a>. Deze heeft veel meer stijlen gedefinieerd dan het BKG. In de BKG lijst is, indien mogelijk, ook het best bijpassende nummer uit de BJCP lijst opgenomen.</p>
+</div>
+</div>
+<p>Om de technische kenmerken van de biertypen in een Excel programma te kunnen gebruiken heb ik deze kenmerken in een gestructureerd csv bestand geplaatst. De gebruikte variabelen zijn:</p>
+<table class="table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 36%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">variabele</th>
+<th style="text-align: left;">gegevenstype</th>
+<th style="text-align: left;">toelichting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">BIERTYPE</td>
+<td style="text-align: left;">tekst</td>
+<td style="text-align: left;">Naam biertype</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KLASSE</td>
+<td style="text-align: left;">tekst</td>
+<td style="text-align: left;">A, B, C of D</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BEGINSGMIN</td>
+<td style="text-align: left;">geheel getal</td>
+<td style="text-align: left;">Begin SG, minimum (gram/liter)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BEGINSGMAX</td>
+<td style="text-align: left;">geheel getal</td>
+<td style="text-align: left;">Begin SG, maximum (gram/liter)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SVGMIN</td>
+<td style="text-align: left;">geheel getal</td>
+<td style="text-align: left;">Schijnbare vergistingsgraad, minimum (percentage)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SVGMAX</td>
+<td style="text-align: left;">geheel getal</td>
+<td style="text-align: left;">Schijnbare vergistingsgraad, maximum (percentage)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ABVMIN</td>
+<td style="text-align: left;">decimaal getal</td>
+<td style="text-align: left;">Alcohol volumepercentage, minimum</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ABVMAX</td>
+<td style="text-align: left;">decimaal getal</td>
+<td style="text-align: left;">Alcohol volumepercentage, maximum</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EBCMIN</td>
+<td style="text-align: left;">geheel getal</td>
+<td style="text-align: left;">Kleur, minimum (EBC)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">EBCMAX</td>
+<td style="text-align: left;">geheel getal</td>
+<td style="text-align: left;">Kleur, maximum (EBC)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">EBUMIN</td>
+<td style="text-align: left;">geheel getal</td>
+<td style="text-align: left;">Bitterheid, minimum (EBU)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">EBUMAX</td>
+<td style="text-align: left;">geheel getal</td>
+<td style="text-align: left;">Bitterheid, maximum (EBU)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CO2MIN</td>
+<td style="text-align: left;">decimaal getal</td>
+<td style="text-align: left;">Koolzuurgehalte, minimum (gram/liter)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CO2MAX</td>
+<td style="text-align: left;">decimaal getal</td>
+<td style="text-align: left;">Koolzuurgehalte, maximum (gram/liter)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">BJCP</td>
+<td style="text-align: left;">tekst</td>
+<td style="text-align: left;">BJCP style (2015) nummer</td>
+</tr>
+</tbody>
+</table>
+<p>In de lijst komen ook een paar ontbrekende waarden voor omdat de gegevens niet bekend zijn. Daarnaast zijn voor een paar typen bij sommige kenmerken alleen een gemiddelde waarde opgegeven. In dat geval is in de Excel lijst de minimum- en maximumwaarde voor dat kenmerk gelijk gemaakt aan de opgegeven gemiddelde waarde.</p>
+<p>Het gegevensbestand <a href="bkg_biertypen.csv">bkg_biertypen.csv</a> kun je downloaden en in Excel inlezen. Maar fraaier en beter is het om deze via Power Query als een tabel in een Excel werkblad te laden. Het voordeel hiervan is dat wanneer het gegevensbestand gewijzigd of uitgebreid wordt, je de tabel in Excel met 1 druk op een knop kunt vernieuwen.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Tip: Excel cursus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>En om jouw Excel vaardigheden te vergroten kun je mijn gratis online cursus <a href="https://leerexcel.netlify.app/">Leer Excel</a> volgen.</p>
+</div>
+</div>
+<p>Voor Excel 2016 (365) werkt dit als volgt.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Voor Excel 2013 en 2010 moet je eerst de gratis <a href="https://www.microsoft.com/nl-NL/download/details.aspx?id=39379">Power Query addin</a> downloaden en installeren.</p>
+</div></div><ol type="1">
+<li>Open een (nieuw) Excel bestand.</li>
+<li>Kies <strong>tab Gegevens &gt; Van het web (groep Gegevens ophalen en transformeren)</strong></li>
+<li>Vul de URL van het bestand in.</li>
+<li>Klik op <strong>OK</strong>.</li>
+<li>Klik op <strong>Laden</strong>.</li>
+</ol>
+<p>De gegevens worden nu als een tabel in een nieuw Excel werkblad geplaatst. Hierna kun je de gegevens gebruiken voor analyses of voor een eigen brouwprogramma in Excel.</p>
+<p>Om de gegevens te vernieuwen kies je: <strong>tab Gegevens &gt; Alles vernieuwen (groep Query’s en verbindingen)</strong>.</p>
+<section id="demo" class="level3">
+<h3 class="anchored" data-anchor-id="demo">Demo</h3>
+<p>Wanneer je de gegevens eenmaal in een werkblad hebt staan kun je hiermee experimenteren en analyses maken. Als voorbeeld het bestand <a href="demo_bkg_biertypen.xlsx">demo_bkg_biertypen.xlsx</a> waarin de volgende acties zijn uitgevoerd:</p>
+<ol type="1">
+<li>Laden van de biertypenlijst naar een tabel in een werkblad.</li>
+<li>Maken van twee nieuwe variabelen met de Query Editor.</li>
+<li>Maken van twee grafieken die de variatie in alcoholgehalte en bitterheid voor de biertypen tonen.</li>
+<li>Maken van twee draaitabellen die de grenzen van het begin SG en EBC waarde voor de vier klassen tonen.</li>
+<li>Maken van een draaitabel met draaigrafiek en slicer om het verband tussen het begin SG en alcoholgehalte voor de biertypes te onderzoeken.</li>
+</ol>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Gekopieerd!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Blog van Ben Welman, gemaakt met <a href="https://quarto.org">Quarto</a>. Licentie: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl">CC BY-NC-SA 4.0</a>.</div>   
+  </div>
+</footer>
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.0.3">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Daniel Morey">
+<meta name="dcterms.date" content="2020-03-10">
+<meta name="description" content="Het originele artikel van Morey.">
+
+<title>Vlearmoesbier - Approximating SRM Beer Color of Homebrew Based on Recipe Formulation</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Geen resultaten",
+    "search-matching-documents-text": "overeenkomsten",
+    "search-copy-link-title": "Kopieer link naar Zoeken",
+    "search-hide-matches-text": "Verberg extra overeenkomsten",
+    "search-more-match-text": "verdere overeenkomsten in dit document",
+    "search-more-matches-text": "verdere overeenkomsten in dit document",
+    "search-clear-button-title": "Reset",
+    "search-detached-cancel-button-title": "Annuleren",
+    "search-submit-button-title": "Indienen"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-78K928PMC4"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-78K928PMC4', { 'anonymize_ip': true});
+</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+<meta name="twitter:title" content="Vlearmoesbier - Approximating SRM Beer Color of Homebrew Based on Recipe Formulation">
+<meta name="twitter:description" content="Het originele artikel van Morey.">
+<meta name="twitter:image" content="https://bwelman.github.io/vlearmoesbier/posts\2021-01-17-beer-color\grafiek.png">
+<meta name="twitter:creator" content="@benwem">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image-height" content="431">
+<meta name="twitter:image-width" content="574">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Vlearmoesbier</span>
+  </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../over.html">Over</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/bwelman"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/benwem"><i class="bi bi-twitter" role="img">
+</i> 
+ </a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/benwelman/"><i class="bi bi-linkedin" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Approximating SRM Beer Color of Homebrew Based on Recipe Formulation</h1>
+                  <div>
+        <div class="description">
+          Het originele artikel van Morey.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">rekenen</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Auteur</div>
+      <div class="quarto-title-meta-contents">
+               <p>Daniel Morey </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Publicatiedatum</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">March 10, 2020</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>One of the most challenging aspects of “brewing to style” for home brewers is trying to achieve a color within the specified range for the particular class. Home brewers have usually been left to rely on experience or trial and error to design recipes that will fit the style.</p>
+<p>Color ranges for the recognized beer styles defined by the AHA and BJCP are given in terms of SRM (Standard Reference Method). Measurement of actual SRM is not practical for the amateur brewer. Thus, Malt Color Units (MCU) have been used to quantify color often. MCU is the Lovibond rating of the ingredient multiplied by its weight in pounds divided by the beer’s volume in US gallons. The dilemma is that apparent color in terms of SRM diverges from MCU.</p>
+<p><span class="math display">\[
+MCU = \frac{^o L(ovibond)}{gallons}
+\]</span></p>
+<p>Many factors impact beer color; therefore, making an exact prediction is impossible. Some factors that effect beer color are: Recipe (grains/malts), quality of crush, mash procedure (temperature(s)), mash time, mash pH, boil time, yeast, and many more. Of all the factors, the malt/grain bill has the greatest impact on color thus we can ignore the other contributors and still make a good approximation. Several individuals have studied beer color and developed models to help predict it.</p>
+<section id="linear-models" class="level2">
+<h2 class="anchored" data-anchor-id="linear-models">LINEAR MODELS</h2>
+<p>The most common method states that SRM is equivalent to MCU. This is probably the oldest approximation. The weakness of this model as documented by several authors is that color in SRM diverges from MCU for values greater than 10.</p>
+<p><span class="math display">\[SRM = MCU\]</span></p>
+<p>Randy Mosher developed a model based on commercial beers whose recipes and color were known. His model is expressed as:</p>
+<p><span class="math display">\[SRM = (0.3*MCU) + 4.7\]</span></p>
+<p>Using this approximation, minimum beer color is 4.7. This is not realistic and the model should only be used for beer with MCU greater than 7.</p>
+<p>Ray Daniels did some similar work based on homebrewed beers. Color of samples left over from home brew competitions were measured using SRM and the MCUs were calculated from the recipes submitted by the entrants. Daniels’ model differs from Mosher’s and suggests that homebrew is generally darker than commercial beers. His approximation is:</p>
+<p><span class="math display">\[SRM = (0.2*MCU) + 8.4\]</span></p>
+<p>Like Mosher’s model, the formula has a minimum color that is not reasonable. Consequently the formula should only be used for beers with MCU greater than 11.</p>
+</section>
+<section id="power-model" class="level2">
+<h2 class="anchored" data-anchor-id="power-model">POWER MODEL</h2>
+<p>Inspired by Ray Daniels’ three part series printed Brewing Techniques in the SEP/OCT and NOV/DEC 1995 issues, I set out to develop a single model that could apply for the complete brewing spectrum and account for the non-linear behavior observed by so many.</p>
+<p>Since I did not have raw data to work with, I based my work on five assumptions:</p>
+<ol type="1">
+<li><p>SRM is approximately equal to MCU for values from 0 to 10.</p></li>
+<li><p>Homebrew is generally darker than commercial beer.</p></li>
+<li><p>Base on the previous qualitative postulate, I assumed that Ray Daniels’ predicted relationship exists for beers with color greater than 10.</p></li>
+<li><p>Since Mosher’s equation predicts darker color than Daniels’ model for values of MCU greater than 37, I assumed that Mosher’s approximation governed beer color for all values more than 37 MCUs.</p></li>
+<li><p>Difference in color for beers greater than 40 SRM are essentially impossible to detect visually; therefore, I limited the analysis to SRM of 50 and less.</p></li>
+</ol>
+<p>Using these assumptions, data was created for my analysis. I tried various curve fitting techniques to find the best approximation to the assumed relationship. In the end, the power model was found best to represent the assumed curve. The resulting model was:</p>
+<p><span class="math display">\[SRM = 1.49*MCU^{0.69}\]</span></p>
+<p>This model eliminates the two major limitations of linear models in my opinion. The minimum color is zero, so the model can be used for lighter color beers. The model accounts for decreased color contribution from malt as the beer gets darker or the “law of diminishing returns.”</p>
+<p>A graphical representation of my model along with Daniels’ and Mosher’s linear approximations can be found in figure 1. Also plotted is tabular data that can be found in Ray Daniels’ <em>Designing Great Beers</em> <span class="citation" data-cites="danielsDesigningGreatBeers1998">(<a href="#ref-danielsDesigningGreatBeers1998" role="doc-biblioref">Daniels 1998</a>, pg 61)</span> pg 61, and Greg Noonan’s <em>New Brewing Lager Beer</em> <span class="citation" data-cites="noonanNewBrewingLager2003">(<a href="#ref-noonanNewBrewingLager2003" role="doc-biblioref">Noonan 2003</a>, pg 206)</span>.</p>
+<div id="fig-mcu-srm" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="mcu-srm.png" class="img-fluid figure-img"></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figuur 1: Color Estimates based on recipe MCU.</figcaption><p></p>
+</figure>
+</div>
+<p>Some interesting observations from the Home Brew Digest (HBD) based on work by Kyle Druey. Kyle fitted power curves to Daniels’ and Noonan’s data. These power curves along with my model all predict beer color of 40 SRM around 126 MCUs (Morey at 117 MCUs; Daniels at 136 MCUs; Noonan at 126 MCUs).</p>
+<p>The Druey power models fitted to Daniels’ and Noonan’s data are:</p>
+<p><span class="math display">\[
+SRM = 1.73*MCU^{0.64} - 0.27 \text{ (Daniels)}
+\]</span></p>
+<p><span class="math display">\[
+SRM = 15.03*MCU^{0.27} -15.53 \text{ (Noonan)}
+\]</span></p>
+</section>
+<section id="malt-extracts" class="level2">
+<h2 class="anchored" data-anchor-id="malt-extracts">MALT EXTRACTS</h2>
+<p>Predicting color for extract recipes provides an additional challenge. Where do you find Lovibond ratings for extracts? While this information is not always available, you may use the following as approximations in the table 1 below. The data was originally printed in Ray Daniels’ article in the NOV/DEC 1995 issue of Brewing Techniques:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Color</th>
+<th style="text-align: center;">°L</th>
+<th style="text-align: left;">Extract Type</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Pale Golden</td>
+<td style="text-align: center;">3 - 4</td>
+<td style="text-align: left;">Munton &amp; Fison spray-dry malt extract (light)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Golden</td>
+<td style="text-align: center;">5 - 6</td>
+<td style="text-align: left;">Alexander pale extract syrup</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Light Amber</td>
+<td style="text-align: center;">6 - 7</td>
+<td style="text-align: left;">Munton &amp; Fison extract syrup (pale)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Light Amber</td>
+<td style="text-align: center;">6 - 7</td>
+<td style="text-align: left;">Laaglander dried malt extract</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Amber</td>
+<td style="text-align: center;">8 - 9</td>
+<td style="text-align: left;">John Bull unhopped light syrup</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Amber</td>
+<td style="text-align: center;">8 - 9</td>
+<td style="text-align: left;">Coopers unhopped light syrup</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Amber</td>
+<td style="text-align: center;">8 - 9</td>
+<td style="text-align: left;">Northwestern gold malt extract syrup</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Amber</td>
+<td style="text-align: center;">8 - 9</td>
+<td style="text-align: left;">Northwestern gold dry malt extract</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">CONCLUSION</h2>
+<p>I have been using my power model since 1996 good results. I now find that my beers are within the range I would expect for the style I’m brewing. Sure, sometimes they are slightly darker or lighter than I envisioned but the days of gross color errors are gone.</p>
+<p>As previously stated, exact color predictions are not possible. Due to the many factors ignored by these simplified models, we should treat all color predictions as approximations. Actual color deviations of 20% or more from the prediction can be expected.</p>
+<p>What method is best for you? That is for you to decide. I suggest you try the models and find the one that gives results you expect for the style you are brewing. With these simple tools, you can tailor your recipes to achieve color within the desired range.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">Referenties</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-danielsDesigningGreatBeers1998" class="csl-entry" role="doc-biblioentry">
+Daniels, Ray. 1998. <em>Designing <span>Great Beers</span>: <span>The Ultimate Guide</span> to <span>Brewing Classic Beer Styles</span></em>. <span>Boulder, CO</span>: <span>Brewers Publications</span>.
+</div>
+<div id="ref-noonanNewBrewingLager2003" class="csl-entry" role="doc-biblioentry">
+Noonan, Gregory J. 2003. <em>New <span>Brewing Lager Beer</span>: <span>The Most Comprehensive Book</span> for <span>Home</span> and <span>Microbrewers</span></em>. Revised, Expanded edition. <span>Boulder, Colo.</span>: <span>Brewers Publications</span>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Gekopieerd!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Blog van Ben Welman, gemaakt met <a href="https://quarto.org">Quarto</a>. Licentie: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl">CC BY-NC-SA 4.0</a>.</div>   
+  </div>
+</footer>
+
+
+
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

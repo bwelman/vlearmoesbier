@@ -1,0 +1,19 @@
+/*-- scss:defaults --*/
+
+// use cosmo as the base
+$theme: "cosmo" !default;
+
+// import google fonts
+@import 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro';
+@import 'https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap';
+
+// use Source Sans Pro font if available
+$font-family-sans-serif:      "Source Sans Pro", Arial, sans-serif !default;
+$navbar-bg: #AD974F;
+
+
+/*-- scss:rules --*/
+
+p {
+  font-family: $font-family-sans-serif;
+}

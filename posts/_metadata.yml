@@ -1,0 +1,11 @@
+# options specified here will apply to all posts in this folder
+
+# freeze: only rerendering when source file changes
+freeze: true
+
+# Enable banner style title blocks
+title-block-banner: true
+
+# Default author
+author:
+  - name: "Ben Welman"

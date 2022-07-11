@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Vlearmoesbier"
+  site-url: "https://bwelman.github.io/vlearmoesbier/"
+  google-analytics: "G-78K928PMC4"
+  page-footer:
+    left: "Blog van Ben Welman, gemaakt met [Quarto](https://quarto.org). Licentie: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl)."
+  twitter-card:
+    creator: "@benwem"
+    card-style: summary_large_image
+  navbar:
+    right:
+      - text: "Over"
+        href: over.qmd
+      - icon: github
+        href: https://github.com/bwelman
+      - icon: twitter
+        href: https://twitter.com/benwem
+      - icon: linkedin
+        href: https://www.linkedin.com/in/benwelman/
+format:
+  html:
+    theme: beer.scss
+    css: styles.css
+    smooth-scroll: true
+
+editor: visual
+language: _language-nl.yml

@@ -1,0 +1,46 @@
+---
+title: "Hoprendement - Kooktijd"
+description: "Relatie tussen de hopbitterheid en de kooktijd."
+date: "2020-08-04"
+image: "grafiek.png"
+categories: [rekenen, hop]
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+knitr::opts_chunk$set(echo = FALSE)
+suppressMessages(library(ggplot2))
+suppressMessages(library(tidyr))
+suppressMessages(library(kableExtra))
+```
+
+In het artikel [What's your IBU](https://www.homebrewersassociation.org/attachments/0000/2501/IBUs.pdf) van Michael Hall (1997) is een tabel gepubliceerd met daarin het hoprendement als functie van de kooktijd. Deze waarden zijn te zien in @tbl-hrkt.
+
+```{r}
+#| label: tbl-hrkt
+#| tbl-cap: "Rendement als functie van de kooktijd (min.)"
+
+hrkt <- read.csv(file = "utilizationrate-boiltime.csv")
+hrkt %>% 
+  kbl() %>% 
+  kable_styling(font_size = 12, bootstrap_options = "condensed") %>% 
+  scroll_box(height = "400px")
+```
+
+In @fig-hrkt zie je het hoprendement als van functie van de kooktijd voor een wort met SG 1,050, met verse hopbloemen, geen hopzak, geen filtering en een gist met gemiddelde uitvlokking.
+
+```{r}
+#| label: fig-hrkt
+#| fig-cap: "Hoprendement als functie van de kooktijd"
+
+# Structureren data
+hrkt <- hrkt %>% 
+  pivot_longer(-Boiltime, names_to = "Methode", values_to = "Rendement")
+
+ggplot(data = hrkt, aes(x = Boiltime, y = Rendement, color = Methode)) + 
+  geom_line(size = 1.2) + theme_bw() +
+	labs(x = "Kooktijd (min.)", y = "Rendement (%)") +
+	scale_x_continuous(breaks = seq(0, 90, 5)) + scale_y_continuous(breaks = seq(0, 35, 5))
+```
