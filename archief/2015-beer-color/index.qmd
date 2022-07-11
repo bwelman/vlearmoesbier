@@ -6,7 +6,10 @@ image: "grafiek.png"
 date: "2015-06"
 bibliography: "../bier.bib"
 categories: [rekenen]
-lang: en-US
+lang: en
+crossref: 
+  fig-prefix: ""
+  tbl-prefix: ""
 ---
 
 One of the most challenging aspects of "brewing to style" for home brewers is trying to achieve a color within the specified range for the particular class. Home brewers have usually been left to rely on experience or trial and error to design recipes that will fit the style.
@@ -59,9 +62,9 @@ $$SRM = 1.49*MCU^{0.69}$$
 
 This model eliminates the two major limitations of linear models in my opinion. The minimum color is zero, so the model can be used for lighter color beers. The model accounts for decreased color contribution from malt as the beer gets darker or the "law of diminishing returns."
 
-A graphical representation of my model along with Daniels' and Mosher's linear approximations can be found in figure 1. Also plotted is tabular data that can be found in Ray Daniels' *Designing Great Beers* [@danielsDesigningGreatBeers1998, pg 61] pg 61, and Greg Noonan's *New Brewing Lager Beer* [@noonanNewBrewingLager2003, pg 206].
+A graphical representation of my model along with Daniels' and Mosher's linear approximations can be found in figure @fig-mcu-srm. Also plotted is tabular data that can be found in Ray Daniels' *Designing Great Beers* [@danielsDesigningGreatBeers1998, pg 61], and Greg Noonan's *New Brewing Lager Beer* [@noonanNewBrewingLager2003, pg 206].
 
-![Color Estimates based on recipe MCU.](mcu-srm.png){#fig-mcu-srm}
+![Color Estimates Based on Recipe MCU.](mcu-srm.png){#fig-mcu-srm}
 
 Some interesting observations from the Home Brew Digest (HBD) based on work by Kyle Druey. Kyle fitted power curves to Daniels' and Noonan's data. These power curves along with my model all predict beer color of 40 SRM around 126 MCUs (Morey at 117 MCUs; Daniels at 136 MCUs; Noonan at 126 MCUs).
 
@@ -77,7 +80,7 @@ $$
 
 ## MALT EXTRACTS
 
-Predicting color for extract recipes provides an additional challenge. Where do you find Lovibond ratings for extracts? While this information is not always available, you may use the following as approximations in the table 1 below. The data was originally printed in Ray Daniels' article in the NOV/DEC 1995 issue of Brewing Techniques:
+Predicting color for extract recipes provides an additional challenge. Where do you find Lovibond ratings for extracts? While this information is not always available, you may use the following as approximations in the table @tbl-extractcolor below. The data was originally printed in Ray Daniels' article in the NOV/DEC 1995 issue of Brewing Techniques:
 
 |    Color    |  °L   | Extract Type                                  |
 |:-----------:|:-----:|:----------------------------------------------|
@@ -89,6 +92,8 @@ Predicting color for extract recipes provides an additional challenge. Where do 
 |    Amber    | 8 - 9 | Coopers unhopped light syrup                  |
 |    Amber    | 8 - 9 | Northwestern gold malt extract syrup          |
 |    Amber    | 8 - 9 | Northwestern gold dry malt extract            |
+
+: Extract color {#tbl-extractcolor}
 
 ## CONCLUSION
 

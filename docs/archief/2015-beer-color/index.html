@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.0.8">
@@ -219,11 +219,11 @@ MCU = \frac{^o L(ovibond)}{gallons}
 <p>Using these assumptions, data was created for my analysis. I tried various curve fitting techniques to find the best approximation to the assumed relationship. In the end, the power model was found best to represent the assumed curve. The resulting model was:</p>
 <p><span class="math display">\[SRM = 1.49*MCU^{0.69}\]</span></p>
 <p>This model eliminates the two major limitations of linear models in my opinion. The minimum color is zero, so the model can be used for lighter color beers. The model accounts for decreased color contribution from malt as the beer gets darker or the “law of diminishing returns.”</p>
-<p>A graphical representation of my model along with Daniels’ and Mosher’s linear approximations can be found in figure 1. Also plotted is tabular data that can be found in Ray Daniels’ <em>Designing Great Beers</em> <span class="citation" data-cites="danielsDesigningGreatBeers1998">(<a href="#ref-danielsDesigningGreatBeers1998" role="doc-biblioref">Daniels 1998</a>, pg 61)</span> pg 61, and Greg Noonan’s <em>New Brewing Lager Beer</em> <span class="citation" data-cites="noonanNewBrewingLager2003">(<a href="#ref-noonanNewBrewingLager2003" role="doc-biblioref">Noonan 2003</a>, pg 206)</span>.</p>
+<p>A graphical representation of my model along with Daniels’ and Mosher’s linear approximations can be found in figure <a href="#fig-mcu-srm">1</a>. Also plotted is tabular data that can be found in Ray Daniels’ <em>Designing Great Beers</em> <span class="citation" data-cites="danielsDesigningGreatBeers1998">(<a href="#ref-danielsDesigningGreatBeers1998" role="doc-biblioref">Daniels 1998</a>, pg 61)</span>, and Greg Noonan’s <em>New Brewing Lager Beer</em> <span class="citation" data-cites="noonanNewBrewingLager2003">(<a href="#ref-noonanNewBrewingLager2003" role="doc-biblioref">Noonan 2003</a>, pg 206)</span>.</p>
 <div id="fig-mcu-srm" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="mcu-srm.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figuur 1: Color Estimates based on recipe MCU.</figcaption><p></p>
+<p></p><figcaption aria-hidden="true" class="figure-caption">Figuur 1: Color Estimates Based on Recipe MCU.</figcaption><p></p>
 </figure>
 </div>
 <p>Some interesting observations from the Home Brew Digest (HBD) based on work by Kyle Druey. Kyle fitted power curves to Daniels’ and Noonan’s data. These power curves along with my model all predict beer color of 40 SRM around 126 MCUs (Morey at 117 MCUs; Daniels at 136 MCUs; Noonan at 126 MCUs).</p>
@@ -237,8 +237,10 @@ SRM = 15.03*MCU^{0.27} -15.53 \text{ (Noonan)}
 </section>
 <section id="malt-extracts" class="level2">
 <h2 class="anchored" data-anchor-id="malt-extracts">MALT EXTRACTS</h2>
-<p>Predicting color for extract recipes provides an additional challenge. Where do you find Lovibond ratings for extracts? While this information is not always available, you may use the following as approximations in the table 1 below. The data was originally printed in Ray Daniels’ article in the NOV/DEC 1995 issue of Brewing Techniques:</p>
+<p>Predicting color for extract recipes provides an additional challenge. Where do you find Lovibond ratings for extracts? While this information is not always available, you may use the following as approximations in the table <a href="#tbl-extractcolor">1</a> below. The data was originally printed in Ray Daniels’ article in the NOV/DEC 1995 issue of Brewing Techniques:</p>
+<div id="tbl-extractcolor" class="anchored">
 <table class="table">
+<caption>Tabel 1: Extract color</caption>
 <thead>
 <tr class="header">
 <th style="text-align: center;">Color</th>
@@ -289,6 +291,7 @@ SRM = 15.03*MCU^{0.27} -15.53 \text{ (Noonan)}
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">CONCLUSION</h2>
