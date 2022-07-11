@@ -1,0 +1,152 @@
+---
+title: "Calculating Hop Bitterness in Beer"
+description: "Het originele artikel van Jackie Rager."
+author: "Jackie Rager"
+image: "preview.png"
+date: "1990"
+categories: [rekenen]
+lang: en-US
+crossref: 
+  tbl-prefix: "Table"
+---
+
+Source: ZYMURGY SPECIAL 1990, 53-54.
+
+Has confusion over the use of AAU, BU, HBU and IBU left you with a bitter taste in your mouth? Was that bitter taste left by your latest homebrew that should have emphasized the malt? If so, this article may be your ticket to better-balanced brews.
+
+First, let's familiarize ourselves with the four terms for the two calculation methods used to determine the bitterness in beer. They are BU (Bittering Units), HBU (Homebrew Bittering Units), AAU (Alpha Acid Units), and IBU (International Bittering Units). Why we need two names for each calculation is beyond me. That's an issue best left up to the HSC (Homebrewing Standards Committee), if one exists. If I understand what I've read, AAU and HBU are calculated by multiplying the weight of hops (in ounces) by their alpha acid. IBU and BU include boiling time in the calculation.
+
+Which is best for determining bitterness in beer? What do you do if you want to decrease or increase the hop bitterness of a particular recipe, or if you want to develop your own recipe? What would happen if you boiled the hops 20 minutes less or more? To answer these questions, you need more data on the effect boiling has on hop utilization.
+
+What homebrewers need is a formula for determining how much bitterness will be derived from a hop addition or how to determine how much hops to add to get the desired bitterness. The following utilization chart (@tbl-ibuchart) and formulas have been developed to satisfy that need. I must give credit to Fred Eckhardt, Dave Miller and Byron Burch because information gleaned from their books forms the basis for this chart and formula. My contribution was to experiment with their data, fill in some of the gaps and develop the formula to cover any batch size and wort density.
+
+Keep in mind that @tbl-ibuchart and the calculations are for bitterness only. Your aroma, flavoring and bittering hop rates should be determined based on the style of beer being brewed. Hops boiled five minutes or less contribute more to aroma than to bitterness. Hops boiled six to 25 minutes contribute greatly to the flavor of the beer. Bitterness is extracted in greater amounts by longer active boiling.
+
+|           |                                |
+|-----------|--------------------------------|
+| $\%U$     | Percent utilization            |
+| $\%A$     | Percent alpha acid             |
+| $W_{gr}$  | Weight in grams                |
+| $W_{oz}$  | Weight in ounces               |
+| $V_{gal}$ | Volume in U.S. gallons         |
+| $V_{L}$   | Volume in liters               |
+| $GA$      | Gravity adjustment             |
+| $GB$      | Gravity of boiling wort        |
+| $IBU$     | (International) Bittering Unit |
+
+: Abbreviations used in the following formulas {#tbl-abbreviations}
+
+A gravity adjustment calculation is used for high-gravity beers or wort if the brew kettle is too small to boil a full batch. It is calculated by taking the larger of gravity of boil (GB) minus 1.050, divided by 0.2. If neither gravity is greater than 1.050, then GA equals 0.
+
+$$
+\frac{GB - 1.050}{0.2} = GA
+$$
+
+::: column-margin
+**All percentages should be expressed as decimal equivalent.**
+:::
+
+If using metric measurements of grams and liters, the equations for finding IBUs and grams of hops are:
+
+$$
+IBU = \frac{\%U \times \%A \times W_{gr}}{V_{L} \times (1 + GA)} \times 1000
+$$
+
+$$
+W_{gr} = \frac{V_{L} \times (1 + GA) \times IBU \times 0.001}{\%U \times \%A}
+$$
+
+If using English measurements of ounces and U.S. gallons the equations for finding IBUs and ounces of hops are:
+
+$$
+IBU = \frac{W_{oz} \times \%U \times \%A \times 7462}{V_{gal} \times (1 + GA)}
+$$
+
+$$
+W_{oz} = \frac{V_{gal} \times (1 + GA) \times IBU}{\%U \times \%A \times 7462}
+$$
+
+Suppose you have 1 1/2 ounces of Bullion hops with an alpha acid of 8.0. You want to know how many IBUs you would get by boiling them 45 minutes in five gallons of 1.045 OG wort.
+
+$$
+IBU = \frac{W_{oz} \times \%U \times \%A \times 7462}{V_{gal} \times (1 + GA)} = \frac{1.5 \times 0.269 \times 0.08 \times 7462}{5 \times (1 + 0)} = 48.2
+$$
+
+To determine how many hops to add to get a desired IBU; say 32 IBU:
+
+$$
+W_{oz} = \frac{V_{gal} \times (1 + GA) \times IBU}{\%U \times \%A \times 7462} = \frac{5 \times (1 + 0) \times 32}{0.269 \times 0.08 \times 7462} = 1.0 oz
+$$
+
+**Example:**
+
+How many Hallertau hops at 4.8 alpha acid boiled 40 minutes are required to give 32 IBUs in a five-gallon batch with a specific gravity of 1.048? If the gravity is below 1.050, the GA is not calculated. But if my brew kettle will only boil 2.5 gallons (half the batch) then my gravity of boil (GB) would be 1.096, twice the 1.048 OG.
+
+$$
+GA = \frac{1.096 - 1.050}{0.2} = 0.24
+$$
+
+The hop weight calculation is:
+
+$$
+W_{oz} = \frac{V_{gal} \times (1 + GA) \times IBU}{\%U \times \%A \times 7462} = \frac{5 \times (1 + 0.24) \times 32}{0.228 \times 0.048 \times 7462} = 2.4 oz
+$$
+
+| Boiling Time        | Percent Utilization |
+|---------------------|:-------------------:|
+| Less than 5 minutes |        5.0%         |
+| 6 - 10 minutes      |        6.0%         |
+| 11 - 15 minutes     |        8.0%         |
+| 16 - 20 minutes     |        10.1%        |
+| 21 - 25 minutes     |        12.1%        |
+| 26 -30 minutes      |        15.3%        |
+| 31 - 35 minutes     |        18.8%        |
+| 36 - 40 minutes     |        22.8%        |
+| 41 - 45 minutes     |        26.9%        |
+| 46 - 50 minutes     |        28.1%        |
+| 51 - 60 minutes     |        30.0%        |
+
+: IBU chart. {#tbl-ibuchart}
+
+::: column-margin
+In formulas, percent utilization must be expressed as a decimal.
+:::
+
+|                             |               |
+|-----------------------------|:-------------:|
+| **LIGHT BEERS**             | **IBU Range** |
+| American Light              |  7.0 - 19.5   |
+| American Standard Premium   |  9.3 - 17.0   |
+| International Style Lager   |  18.0 - 40.0  |
+| North German Lager and Pils |  28.5 - 40.0  |
+| Cream Ale                   |  20.0 - 70.0  |
+| **AMBER BEERS**             | **IBU Range** |
+| Vienna Lager                |  14.6 - 26.0  |
+| Oktoberfest/Maerzen         |  17.0 - 34.0  |
+| Steam                       |     40.0      |
+| Bitter                      |  23.0 - 44.0  |
+| Pale Ale                    |  19.0 - 54.0  |
+| Kölsch and Alt              |  21.0 - 31.0  |
+| India Pale Ale              |  19.0 - 87.0  |
+| Trappist                    |  11.2 - 24.0  |
+| **DARK BEERS**              | **IBU Range** |
+| Schwarzbier                 |  28.0 - 40.0  |
+| Bock                        |  26.0 - 35.0  |
+| Brown Ale and Mild          |  31.0 - 38.0  |
+| **BLACK BEERS**             | **IBU Range** |
+| Porter                      |  34.0 - 56.0  |
+| Sweet Stout                 |     29.0      |
+| Dry Stout                   |  35.0 - 90.0  |
+| Belgian Triples/Barleywines | 32.0 - 100.0  |
+| **WHEAT BEERS**             | **IBU Range** |
+| Weisse and Weizen           |  10.5 - 20.0  |
+| Berliner Wiesse[^1]         |   4.0 - 5.0   |
+| American Wheat              |  15.0 - 27.0  |
+
+: Beer Style. {#tbl-beerstyle}
+
+[^1]: Spelfout in het originele artikel. Dit moet zijn Berliner Weisse.
+
+::: column-margin
+IBU figures were derived from *Essentials of Beer Styles*, by Fred Eckhardt.
+:::
