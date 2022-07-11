@@ -3,9 +3,10 @@ title: "Approximating SRM Beer Color of Homebrew Based on Recipe Formulation"
 description: "Het originele artikel van Morey."
 author: "Daniel Morey"
 image: "grafiek.png"
-date: "2020-03-10"
+date: "2015-06"
 bibliography: "../bier.bib"
 categories: [rekenen]
+lang: en-US
 ---
 
 One of the most challenging aspects of "brewing to style" for home brewers is trying to achieve a color within the specified range for the particular class. Home brewers have usually been left to rely on experience or trial and error to design recipes that will fit the style.

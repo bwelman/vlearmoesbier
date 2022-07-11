@@ -6,8 +6,9 @@ bibliography: "../bier.bib"
 nocite: |
   @weastCRCHandbookChemistry1985
 image: "fig1a.png"
-date: "2020-03-10"
+date: "1993-09"
 categories: [rekenen]
+lang: en-US
 crossref: 
   eq-prefix: ""
 ---
