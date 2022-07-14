@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.8">
+<meta name="generator" content="quarto-1.0.20">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -55,7 +55,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -766,7 +766,7 @@ Tip
 <div id="fig-brouwsel-1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="brouwsel-1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figuur 1: Resultaten voor brouwsel 1</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figuur 1: Resultaten voor brouwsel 1</figcaption><p></p>
 </figure>
 </div>
 <p><strong>Brouwsel 2</strong></p>
@@ -779,7 +779,7 @@ Tip
 <div id="fig-brouwsel-2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="brouwsel-2.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figuur 2: Resultaten voor brouwsel 2</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figuur 2: Resultaten voor brouwsel 2</figcaption><p></p>
 </figure>
 </div>
 <p><strong>Brouwsel 3</strong></p>
@@ -791,7 +791,7 @@ Tip
 <div id="fig-brouwsel-3" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="brouwsel-3.png" class="img-fluid figure-img"></p>
-<p></p><figcaption aria-hidden="true" class="figure-caption">Figuur 3: Resultaten voor brouwsel 3</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figuur 3: Resultaten voor brouwsel 3</figcaption><p></p>
 </figure>
 </div>
 
@@ -833,6 +833,21 @@ Tinseth, Glenn. 1997. <span>“Glenn’s <span>Hop Utilization Page</span>.”</
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    toggleBodyColorMode(window.document.querySelector("link#quarto-bootstrap"));
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {

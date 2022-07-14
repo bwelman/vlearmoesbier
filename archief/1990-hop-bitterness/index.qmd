@@ -4,7 +4,7 @@ description: "Het originele artikel van Jackie Rager."
 author: "Jackie Rager"
 image: "preview.png"
 date: "1990"
-categories: [rekenen]
+categories: [rekenen, hop]
 lang: en-US
 crossref: 
   tbl-prefix: "Table"
