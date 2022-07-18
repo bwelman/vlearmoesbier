@@ -1,0 +1,14 @@
+---
+title: "Some reflections on mashing"
+author: ["Dr. Bertram Sacher", "Prof. Dr. Thomas Becker", "Prof. Dr. Ludwig Narziß"]
+date: "2016-5"
+image: "fig2.png"
+categories: [mashing]
+lang: en
+---
+
+Twee artikelen uit Brauwelt International 2016/V en 2016/VI (PDF formaat).
+
+[Some reflections on mashing - Part 1](mashing-reflections-part1.pdf)
+
+[Some reflections on mashing - Part 2](mashing-reflections-part2.pdf)

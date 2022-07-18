@@ -2,7 +2,6 @@
 title: "Hops"
 description: "Revisiting the IBU."
 author: "Petr Novotny"
-#image: "preview.png"
 date: "2018-03"
 image: preview.png
 categories: [rekenen, hop]
